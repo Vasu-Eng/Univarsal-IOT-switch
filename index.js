@@ -27,4 +27,5 @@ else if( btn_status=== 1){
    alert(Http.responseText);
     btn_status =0;
 }
+}
 });
