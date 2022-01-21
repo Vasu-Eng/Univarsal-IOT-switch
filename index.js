@@ -12,7 +12,7 @@ $("button").on("click", function () {
          console.log( res_1);
         }
         if( res_1 != 0){
-            this.innerHTML = "IOT- 'ON' ";
+            this.innerHTML = "STATUS- 'ON' ";
             $("button").addClass("pressed");
             playSound();
         }
@@ -27,7 +27,7 @@ $("button").on("click", function () {
             console.log( res_0);
         }
         if( res_0 != 0){
-            this.innerHTML = "IOT-'OFF'";
+            this.innerHTML = "STATUS-'OFF'";
             $("button").removeClass("pressed");
             playSound();
         }
