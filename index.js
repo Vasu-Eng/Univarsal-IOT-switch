@@ -13,7 +13,7 @@ playSound();
         Http.open("GET", url);
         Http.send();
         Http.onreadystatechange = (e) => {
-            alert(Http.responseText);
+            console.log(Http.responseText);
         }
     }
     else if (btn_status == 1) {
@@ -24,7 +24,7 @@ playSound();
         Http.open("GET", url);
         Http.send();
         Http.onreadystatechange = (e) => {
-            alert(Http.responseText);
+            console.log(Http.responseText);
         }
     }
 });
