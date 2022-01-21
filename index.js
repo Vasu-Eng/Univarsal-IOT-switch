@@ -3,7 +3,7 @@ var btn_status = 0;
 
 $("button").on("click", function () {
     const Http = new XMLHttpRequest();
-    const url = 'https://api.thingspeak.com/update?api_key=5KWJ1LQXGBSKU5O6&field1=1';
+    var url = 'https://api.thingspeak.com/update?api_key=5KWJ1LQXGBSKU5O6&field1=s';
 playSound();
     if (btn_status == 0) {
         this.innerHTML = "IOT- 'ON' ";
@@ -20,7 +20,7 @@ playSound();
         this.innerHTML = "IOT-'OFF'";
         $("button").removeClass("pressed");
         btn_status = 0;
-        url = url + "1";
+        url = url + "0";
         Http.open("GET", url);
         Http.send();
         Http.onreadystatechange = (e) => {
