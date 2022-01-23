@@ -1,6 +1,6 @@
 const Http = new XMLHttpRequest();
 var btn_status = 0;
-var res = -1;
+var res;
 $("button").on("click", function () {
     if (btn_status == 0) {
         Http.open("GET", "https://api.thingspeak.com/update.json?api_key=5KWJ1LQXGBSKU5O6&field1=1");
